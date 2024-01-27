@@ -9,28 +9,8 @@
 <link rel="stylesheet" href="Home.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 6.3.1, nicepage.com">
+    <script class="u-script" type="text/javascript" src="email.js" defer=""></script>
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo:200,300,400,500,600,700,800,900|Changa:200,300,400,500,600,700,800">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "sakr",
-		"sameAs": [
-				"https://nicepage.com/k/astrology-website-templates"
-		]
-}</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Home">
     <meta property="og:description" content="">
@@ -38,7 +18,7 @@
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
   <body data-home-page="index.html" data-home-page-title="Home" data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-overlap-contrast u-overlap-transparent u-xxl-mode" data-lang="en"><header class="u-clearfix u-gradient u-header u-sticky u-sticky-4716 u-header" id="sec-1508"><div class="u-clearfix u-sheet u-sheet-1">
         <h3 class="u-headline u-text u-text-body-alt-color u-text-default u-text-1">
-          <a href="index.html">صقر الحربي </a>
+          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1" href="index.html">صقر الحربي </a>
         </h3>
         <nav class="u-menu u-menu-one-level u-menu-open-right u-offcanvas u-menu-1" data-responsive-from="SM">
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700;">
@@ -415,34 +395,34 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
         <h4 class="u-align-center u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000"> كيف يمكننا مساعدتك؟</h4>
         <p class="u-align-center u-text u-text-custom-color-3 u-text-2" data-animation-name="flipIn" data-animation-duration="1000" data-animation-direction="X"> نسعد بتواصلكم معنا، يمكنكم استخدام النموذج أدناه لإرسال رسالة عبر البريد الإلكتروني. كما نستقبل ملاحظاتكم واستفساراتكم عبر وسائل التواصل المختلفة. </p>
         <div class="u-expanded-width u-form u-form-1">
-          <form action="./scripts/form-df76-830c.php" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px;" source="customphp" name="form">
+          <form onsubmit="sendMail()" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px;">
             <div class="u-form-group u-form-name u-label-none">
               <label for="name-6797" class="u-label">Name</label>
-              <input type="text" placeholder="الاسم" id="name-6797" name="name" class="u-border-custom-color-8 u-input u-input-rectangle u-none u-text-body-color u-input-1" required="">
+              <input type="text" placeholder="الاسم" id="name" name="name" class="u-border-custom-color-8 u-input u-input-rectangle u-none u-text-body-color u-input-1" required="">
             </div>
             <div class="u-form-group u-form-phone u-label-none u-form-group-2">
               <label for="text-66b2" class="u-label">Input</label>
-              <input type="tel" placeholder="رقم الهاتف" id="text-66b2" name="phone" class="u-border-custom-color-8 u-input u-input-rectangle u-none u-text-body-color u-input-2" required="required">
+              <input type="tel" placeholder="رقم الهاتف" id="phone" name="phone" class="u-border-custom-color-8 u-input u-input-rectangle u-none u-text-body-color u-input-2" required="required">
             </div>
             <div class="u-form-email u-form-group u-label-none">
               <label for="email-6797" class="u-label">Email</label>
-              <input type="email" placeholder="البريد الالكتروني" id="email-6797" name="email" class="u-border-custom-color-8 u-input u-input-rectangle u-none u-text-body-color u-input-3" required="">
+              <input type="email" placeholder="البريد الالكتروني" id="email" name="email" class="u-border-custom-color-8 u-input u-input-rectangle u-none u-text-body-color u-input-3" required="">
             </div>
             <div class="u-form-group u-label-none u-form-group-4">
               <label for="text-182f" class="u-label">Input</label>
-              <input type="text" placeholder="الموضوع" id="text-182f" name="text" class="u-border-custom-color-8 u-input u-input-rectangle u-none u-text-body-color u-input-4">
+              <input type="text" placeholder="الموضوع" id="text" name="text" class="u-border-custom-color-8 u-input u-input-rectangle u-none u-text-body-color u-input-4">
             </div>
             <div class="u-form-group u-form-message u-label-none">
               <label for="message-6797" class="u-label">Address</label>
-              <textarea placeholder="الرسالة" rows="4" cols="50" id="message-6797" name="message" class="u-border-custom-color-8 u-input u-input-rectangle u-none u-text-body-color u-input-5" required=""></textarea>
+              <textarea placeholder="الرسالة" rows="4" cols="50" id="message" name="message" class="u-border-custom-color-8 u-input u-input-rectangle u-none u-text-body-color u-input-5" required=""></textarea>
             </div>
             <div class="u-align-center u-form-group u-form-submit">
               <a href="#" class="u-border-none u-btn u-btn-submit u-button-style u-custom-color-8 u-hover-custom-color-9 u-btn-1">ارسال</a>
               <input type="submit" value="submit" class="u-form-control-hidden">
             </div>
-            <div class="u-form-send-message u-form-send-success">Thank you! Your message has been sent.</div>
-            <div class="u-form-send-error u-form-send-message">Unable to send your message. Please fix errors then try again.</div>
-            <input type="hidden" value="" name="recaptchaResponse">
+            <!-- <div class="u-form-send-message "></div> -->
+            <div class="u-form-send-error u-form-send-success">Thank you! Your message has been sent.</div>
+            <!-- <input type="hidden" value="" name="recaptchaResponse"> -->
           </form>
         </div>
       </div>
@@ -561,4 +541,38 @@ transparency: 0 !important; background-color: rgba(20,20,24,0) !important
         <p class="u-align-center u-text u-text-body-alt-color u-text-3">صقر الحربي للمحاماة © جميع الحقوق محفوظة 2019</p>
       </div></footer><span style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; right: 20px; bottom: 20px; padding: 7px;" class="u-back-to-top u-file-icon u-icon u-icon-circle u-opacity u-opacity-85" data-href="#"><img src="images/35844.png" alt=""></span>
   
-</body></html>
+      
+
+
+
+
+
+
+      <script>
+        function sendMail(){
+        (function(){
+        emailjs.init("3XgKe_OhQahlbOeq3"); // Account Public Key
+        })();
+        var params = {
+        name: document.querySelector("#name").value,
+        phone: document.querySelector("#phone").value,
+        email: document.querySelector("#email").value,
+        subject: document.querySelector("#text").value,
+        message: document.querySelector("#message").value,
+        };
+        var serviceID = "service_nr0wgab"; // Email Service ID
+        var templateID = "template_kj1z372"; // Email Template ID
+        emailjs.send(serviceID, templateID, params) 
+        .then( res =>{
+          alert("The message has been sent successfully")
+        })
+        .catch();
+        }
+        </script>
+
+
+
+
+
+</body>
+</html>

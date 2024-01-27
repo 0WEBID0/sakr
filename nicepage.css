@@ -44498,6 +44498,11 @@ a.u-link.u-text-hover-grey-90:hover {
   margin: 14px 23px 0 auto;
 }
 
+.u-header .u-btn-1 {
+  background-image: none;
+  padding: 0;
+}
+
 .u-header .u-menu-1 {
   margin: -36px auto 14px 0;
 }
