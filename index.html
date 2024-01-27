@@ -551,7 +551,7 @@ transparency: 0 !important; background-color: rgba(20,20,24,0) !important
       <script>
         function sendMail(){
         (function(){
-        emailjs.init("3XgKe_OhQahlbOeq3"); // Account Public Key
+        emailjs.init("2iuJHW5Mf7rgP0bgg"); // Account Public Key
         })();
         var params = {
         name: document.querySelector("#name").value,
@@ -560,8 +560,8 @@ transparency: 0 !important; background-color: rgba(20,20,24,0) !important
         subject: document.querySelector("#text").value,
         message: document.querySelector("#message").value,
         };
-        var serviceID = "service_nr0wgab"; // Email Service ID
-        var templateID = "template_kj1z372"; // Email Template ID
+        var serviceID = "service_85xmmdk"; // Email Service ID
+        var templateID = "template_dp4ccxk"; // Email Template ID
         emailjs.send(serviceID, templateID, params) 
         .then( res =>{
           alert("The message has been sent successfully")
