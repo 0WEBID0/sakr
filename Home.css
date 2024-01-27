@@ -13,7 +13,7 @@
   --animation-custom_in-opacity: 0;
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 1;
-  font-size: 3rem;
+  font-size: 3rem !important;
   margin: 289px 10px 0;
 }
 
